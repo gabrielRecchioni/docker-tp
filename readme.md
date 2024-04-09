@@ -15,8 +15,8 @@
 #### guardar libro
 
 ```http
-curl -d '{"title":"titulo1", "author":"autor1" }' --json -X POST http://localhost:8080/api/books
+curl -X POST localhost:8080/api/books/ -H 'Content-Type: application/json' -d '{"title":"titulo1", "author":"autor1" }' 
 ```
 ```http
-curl -d '{"title":"titulo 2", "author":"autor 2" }' --json -X POST http://localhost:8080/api/books
+curl -X POST localhost:8080/api/books/ -H 'Content-Type: application/json' -d '{"title":"titulo 2", "author":"autor 2" }'  
 ```
